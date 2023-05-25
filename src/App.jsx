@@ -10,11 +10,7 @@ function App() {
       <h2>
         Hello <Ejercicio3 nuevaLinea="my friend!" msj={msj} />
       </h2>
-      <Textostate>
-        {(msj) => (
-          <button onClick={() => setMsj(msj)}>Clickea aquí</button>
-        )}
-      </Textostate>
+      <Textostate setMsj={setMsj} />
     </>
   );
 }
